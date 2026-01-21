@@ -32,6 +32,8 @@ size_flags_vertical = 4
 [node name="NinePatchRect" type="NinePatchRect" parent="PopUpMenu/VBoxContainer/baseMenuScreen"]
 custom_minimum_size = Vector2(500, 200)
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 texture = ExtResource("1_kplmn")
 region_rect = Rect2(741, 38, 22, 22)
 patch_margin_left = 4
@@ -39,5 +41,20 @@ patch_margin_top = 4
 patch_margin_right = 4
 patch_margin_bottom = 4
 
-[node name="Control" type="Control" parent="PopUpMenu/VBoxContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="PopUpMenu/VBoxContainer/baseMenuScreen/NinePatchRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 15
+
+[node name="Button" type="Button" parent="PopUpMenu/VBoxContainer/baseMenuScreen/NinePatchRect/MarginContainer"]
+layout_mode = 2
+
+[node name="Seperator" type="Control" parent="PopUpMenu/VBoxContainer"]
 layout_mode = 2
