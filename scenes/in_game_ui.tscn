@@ -63,6 +63,8 @@ theme_override_constants/margin_bottom = 15
 
 [node name="VBoxBottonsContainer" type="VBoxContainer" parent="PopUpMenu/VBoxContainer/baseMenuScreen/NinePatchRect/MarginContainer"]
 layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
 theme_override_constants/separation = 10
 
 [node name="TopBoxContainer" type="HBoxContainer" parent="PopUpMenu/VBoxContainer/baseMenuScreen/NinePatchRect/MarginContainer/VBoxBottonsContainer"]
@@ -87,42 +89,6 @@ theme_override_styles/normal = SubResource("StyleBoxTexture_kplmn")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_fnge6")
 theme_override_styles/hover = SubResource("StyleBoxTexture_fnge6")
 
-[node name="HelpButton3" type="Button" parent="PopUpMenu/VBoxContainer/baseMenuScreen/NinePatchRect/MarginContainer/VBoxBottonsContainer/TopBoxContainer"]
-custom_minimum_size = Vector2(60, 60)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_styles/normal = SubResource("StyleBoxTexture_kplmn")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_fnge6")
-theme_override_styles/hover = SubResource("StyleBoxTexture_fnge6")
-
-[node name="HelpButton4" type="Button" parent="PopUpMenu/VBoxContainer/baseMenuScreen/NinePatchRect/MarginContainer/VBoxBottonsContainer/TopBoxContainer"]
-custom_minimum_size = Vector2(60, 60)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_styles/normal = SubResource("StyleBoxTexture_kplmn")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_fnge6")
-theme_override_styles/hover = SubResource("StyleBoxTexture_fnge6")
-
-[node name="HelpButton5" type="Button" parent="PopUpMenu/VBoxContainer/baseMenuScreen/NinePatchRect/MarginContainer/VBoxBottonsContainer/TopBoxContainer"]
-custom_minimum_size = Vector2(60, 60)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_styles/normal = SubResource("StyleBoxTexture_kplmn")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_fnge6")
-theme_override_styles/hover = SubResource("StyleBoxTexture_fnge6")
-
-[node name="HelpButton6" type="Button" parent="PopUpMenu/VBoxContainer/baseMenuScreen/NinePatchRect/MarginContainer/VBoxBottonsContainer/TopBoxContainer"]
-custom_minimum_size = Vector2(60, 60)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_styles/normal = SubResource("StyleBoxTexture_kplmn")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_fnge6")
-theme_override_styles/hover = SubResource("StyleBoxTexture_fnge6")
-
 [node name="BottomBoxContainer2" type="HBoxContainer" parent="PopUpMenu/VBoxContainer/baseMenuScreen/NinePatchRect/MarginContainer/VBoxBottonsContainer"]
 layout_mode = 2
 theme_override_constants/separation = 10
@@ -137,42 +103,6 @@ theme_override_styles/pressed = SubResource("StyleBoxTexture_fnge6")
 theme_override_styles/hover = SubResource("StyleBoxTexture_fnge6")
 
 [node name="HelpButton2" type="Button" parent="PopUpMenu/VBoxContainer/baseMenuScreen/NinePatchRect/MarginContainer/VBoxBottonsContainer/BottomBoxContainer2"]
-custom_minimum_size = Vector2(60, 60)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_styles/normal = SubResource("StyleBoxTexture_kplmn")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_fnge6")
-theme_override_styles/hover = SubResource("StyleBoxTexture_fnge6")
-
-[node name="HelpButton3" type="Button" parent="PopUpMenu/VBoxContainer/baseMenuScreen/NinePatchRect/MarginContainer/VBoxBottonsContainer/BottomBoxContainer2"]
-custom_minimum_size = Vector2(60, 60)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_styles/normal = SubResource("StyleBoxTexture_kplmn")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_fnge6")
-theme_override_styles/hover = SubResource("StyleBoxTexture_fnge6")
-
-[node name="HelpButton4" type="Button" parent="PopUpMenu/VBoxContainer/baseMenuScreen/NinePatchRect/MarginContainer/VBoxBottonsContainer/BottomBoxContainer2"]
-custom_minimum_size = Vector2(60, 60)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_styles/normal = SubResource("StyleBoxTexture_kplmn")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_fnge6")
-theme_override_styles/hover = SubResource("StyleBoxTexture_fnge6")
-
-[node name="HelpButton5" type="Button" parent="PopUpMenu/VBoxContainer/baseMenuScreen/NinePatchRect/MarginContainer/VBoxBottonsContainer/BottomBoxContainer2"]
-custom_minimum_size = Vector2(60, 60)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_styles/normal = SubResource("StyleBoxTexture_kplmn")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_fnge6")
-theme_override_styles/hover = SubResource("StyleBoxTexture_fnge6")
-
-[node name="HelpButton6" type="Button" parent="PopUpMenu/VBoxContainer/baseMenuScreen/NinePatchRect/MarginContainer/VBoxBottonsContainer/BottomBoxContainer2"]
 custom_minimum_size = Vector2(60, 60)
 layout_mode = 2
 size_flags_horizontal = 4
