@@ -123,6 +123,7 @@ theme_override_styles/hover = SubResource("StyleBoxTexture_fnge6")
 
 [node name="BottomBoxContainer2" type="HBoxContainer" parent="PopUpMenu/VBoxContainer/baseMenuScreen/NinePatchRect/MarginContainer/VBoxBottonsContainer"]
 layout_mode = 2
+theme_override_constants/separation = 20
 
 [node name="HelpButton1" type="Button" parent="PopUpMenu/VBoxContainer/baseMenuScreen/NinePatchRect/MarginContainer/VBoxBottonsContainer/BottomBoxContainer2"]
 custom_minimum_size = Vector2(60, 60)
