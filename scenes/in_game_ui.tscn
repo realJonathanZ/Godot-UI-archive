@@ -1,37 +1,34 @@
-[gd_scene format=3 uid="uid://b5j8xfrvun2rf"]
+[gd_scene load_steps=2 format=3 uid="uid://b5j8xfrvun2rf"]
+
+[ext_resource type="Texture2D" uid="uid://dtbl6sclw6jm5" path="res://Sprout Lands - UI Pack - Basic pack/Sprite sheets/Sprite sheet for Basic Pack.png" id="1_kplmn"]
 
 [node name="InGameUI" type="Control"]
 layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
-layout_mode = 0
-offset_right = 572.0
-offset_bottom = 427.0
-
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-
-[node name="ColorRect" type="ColorRect" parent="MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(100, 100)
-layout_mode = 2
-
-[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/ColorRect"]
+[node name="PopUpMenu" type="MarginContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_top = 10
-theme_override_constants/margin_right = 20
 
-[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/ColorRect/MarginContainer"]
-custom_minimum_size = Vector2(20, 20)
+[node name="baseMenuScreen" type="MarginContainer" parent="PopUpMenu"]
 layout_mode = 2
-size_flags_horizontal = 8
-size_flags_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="NinePatchRect" type="NinePatchRect" parent="PopUpMenu/baseMenuScreen"]
+custom_minimum_size = Vector2(500, 200)
+layout_mode = 2
+texture = ExtResource("1_kplmn")
+region_rect = Rect2(741, 38, 22, 22)
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 4
