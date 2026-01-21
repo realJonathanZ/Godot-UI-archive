@@ -22,18 +22,14 @@ grow_vertical = 2
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
+theme_override_constants/separation = 30
 
-[node name="HBoxContainer" type="HBoxContainer" parent="PopUpMenu"]
-layout_mode = 2
-size_flags_horizontal = 8
-size_flags_vertical = 4
-
-[node name="baseMenuScreen" type="MarginContainer" parent="PopUpMenu/HBoxContainer"]
+[node name="baseMenuScreen" type="MarginContainer" parent="PopUpMenu/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="NinePatchRect" type="NinePatchRect" parent="PopUpMenu/HBoxContainer/baseMenuScreen"]
+[node name="NinePatchRect" type="NinePatchRect" parent="PopUpMenu/VBoxContainer/baseMenuScreen"]
 custom_minimum_size = Vector2(500, 200)
 layout_mode = 2
 texture = ExtResource("1_kplmn")
@@ -42,3 +38,6 @@ patch_margin_left = 4
 patch_margin_top = 4
 patch_margin_right = 4
 patch_margin_bottom = 4
+
+[node name="Control" type="Control" parent="PopUpMenu/VBoxContainer"]
+layout_mode = 2
