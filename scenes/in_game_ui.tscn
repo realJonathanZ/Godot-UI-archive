@@ -54,7 +54,10 @@ theme_override_constants/margin_right = 30
 theme_override_constants/margin_bottom = 15
 
 [node name="Button" type="Button" parent="PopUpMenu/VBoxContainer/baseMenuScreen/NinePatchRect/MarginContainer"]
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 
 [node name="Seperator" type="Control" parent="PopUpMenu/VBoxContainer"]
 layout_mode = 2
