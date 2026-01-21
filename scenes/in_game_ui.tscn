@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://b5j8xfrvun2rf"]
+[gd_scene load_steps=3 format=3 uid="uid://b5j8xfrvun2rf"]
 
 [ext_resource type="Texture2D" uid="uid://dtbl6sclw6jm5" path="res://Sprout Lands - UI Pack - Basic pack/Sprite sheets/Sprite sheet for Basic Pack.png" id="1_kplmn"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kplmn"]
+texture = ExtResource("1_kplmn")
 
 [node name="InGameUI" type="Control"]
 layout_mode = 3
@@ -53,11 +56,12 @@ theme_override_constants/margin_top = 15
 theme_override_constants/margin_right = 30
 theme_override_constants/margin_bottom = 15
 
-[node name="Button" type="Button" parent="PopUpMenu/VBoxContainer/baseMenuScreen/NinePatchRect/MarginContainer"]
-custom_minimum_size = Vector2(75, 75)
+[node name="HelpButton" type="Button" parent="PopUpMenu/VBoxContainer/baseMenuScreen/NinePatchRect/MarginContainer"]
+custom_minimum_size = Vector2(60, 60)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_kplmn")
 
 [node name="Seperator" type="Control" parent="PopUpMenu/VBoxContainer"]
 layout_mode = 2
