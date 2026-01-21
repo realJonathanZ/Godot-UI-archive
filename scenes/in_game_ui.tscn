@@ -18,12 +18,17 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="baseMenuScreen" type="MarginContainer" parent="PopUpMenu"]
+[node name="VBoxContainer" type="VBoxContainer" parent="PopUpMenu"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+
+[node name="baseMenuScreen" type="MarginContainer" parent="PopUpMenu/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="NinePatchRect" type="NinePatchRect" parent="PopUpMenu/baseMenuScreen"]
+[node name="NinePatchRect" type="NinePatchRect" parent="PopUpMenu/VBoxContainer/baseMenuScreen"]
 custom_minimum_size = Vector2(500, 200)
 layout_mode = 2
 texture = ExtResource("1_kplmn")
