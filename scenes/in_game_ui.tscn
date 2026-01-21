@@ -23,12 +23,17 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
 
-[node name="baseMenuScreen" type="MarginContainer" parent="PopUpMenu/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="PopUpMenu"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+
+[node name="baseMenuScreen" type="MarginContainer" parent="PopUpMenu/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="NinePatchRect" type="NinePatchRect" parent="PopUpMenu/VBoxContainer/baseMenuScreen"]
+[node name="NinePatchRect" type="NinePatchRect" parent="PopUpMenu/HBoxContainer/baseMenuScreen"]
 custom_minimum_size = Vector2(500, 200)
 layout_mode = 2
 texture = ExtResource("1_kplmn")
