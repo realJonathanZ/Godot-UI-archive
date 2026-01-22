@@ -1,8 +1,9 @@
-[gd_scene load_steps=13 format=3 uid="uid://b5j8xfrvun2rf"]
+[gd_scene load_steps=14 format=3 uid="uid://b5j8xfrvun2rf"]
 
 [ext_resource type="Texture2D" uid="uid://dtbl6sclw6jm5" path="res://Sprout Lands - UI Pack - Basic pack/Sprite sheets/Sprite sheet for Basic Pack.png" id="1_kplmn"]
 [ext_resource type="Texture2D" uid="uid://cc4p0pjbibgr4" path="res://Sprout Lands - UI Pack - Basic pack/Sprite sheets/UI Settings Buttons.png" id="2_fnge6"]
 [ext_resource type="FontFile" uid="uid://clefm8bb5qymn" path="res://Sprout Lands - UI Pack - Basic pack/fonts/pixelFont-7-8x14-sproutLands.ttf" id="3_a45jx"]
+[ext_resource type="Script" uid="uid://d2sndvqcuda0v" path="res://scripts/Stats_display_manager.gd" id="3_fqvwy"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kplmn"]
 texture = ExtResource("1_kplmn")
@@ -146,6 +147,7 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
 theme_override_constants/separation = 20
+script = ExtResource("3_fqvwy")
 
 [node name="CoinDisplay" type="Label" parent="PopUpMenu/VBoxContainer/baseMenuScreen/NinePatchRect/MarginContainer/StatsDisplayContainer"]
 layout_mode = 2
