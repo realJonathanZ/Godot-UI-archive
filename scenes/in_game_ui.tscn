@@ -1,9 +1,18 @@
-[gd_scene load_steps=15 format=3 uid="uid://b5j8xfrvun2rf"]
+[gd_scene load_steps=16 format=3 uid="uid://b5j8xfrvun2rf"]
 
 [ext_resource type="Texture2D" uid="uid://dtbl6sclw6jm5" path="res://Sprout Lands - UI Pack - Basic pack/Sprite sheets/Sprite sheet for Basic Pack.png" id="1_kplmn"]
+[ext_resource type="Script" uid="uid://ddsf81pl7u0ae" path="res://scenes/pop_up_manager.gd" id="1_ria60"]
 [ext_resource type="Texture2D" uid="uid://cc4p0pjbibgr4" path="res://Sprout Lands - UI Pack - Basic pack/Sprite sheets/UI Settings Buttons.png" id="2_fnge6"]
 [ext_resource type="FontFile" uid="uid://clefm8bb5qymn" path="res://Sprout Lands - UI Pack - Basic pack/fonts/pixelFont-7-8x14-sproutLands.ttf" id="3_a45jx"]
 [ext_resource type="Script" uid="uid://d2sndvqcuda0v" path="res://scripts/Stats_display_manager.gd" id="3_fqvwy"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jlb72"]
+texture = ExtResource("1_kplmn")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0
+region_rect = Rect2(247, 132, 18, 8)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kplmn"]
 texture = ExtResource("1_kplmn")
@@ -41,14 +50,6 @@ region_rect = Rect2(869, 102, 22, 22)
 texture = ExtResource("1_kplmn")
 region_rect = Rect2(869, 102, 22, 22)
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jlb72"]
-texture = ExtResource("1_kplmn")
-texture_margin_left = 2.0
-texture_margin_top = 2.0
-texture_margin_right = 2.0
-texture_margin_bottom = 2.0
-region_rect = Rect2(247, 132, 18, 8)
-
 [node name="InGameUI" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -64,6 +65,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ria60")
 
 [node name="BaseMenuScreenContainer" type="VBoxContainer" parent="PopUpMenu"]
 layout_mode = 2
@@ -79,6 +81,12 @@ size_flags_vertical = 4
 [node name="VBoxContainer" type="VBoxContainer" parent="PopUpMenu/BaseMenuScreenContainer/baseMenuScreen"]
 layout_mode = 2
 theme_override_constants/separation = 10
+
+[node name="ToggleMenuButton" type="Button" parent="PopUpMenu/BaseMenuScreenContainer/baseMenuScreen/VBoxContainer"]
+custom_minimum_size = Vector2(30, 9)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_jlb72")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="PopUpMenu/BaseMenuScreenContainer/baseMenuScreen/VBoxContainer"]
 custom_minimum_size = Vector2(450, 170)
@@ -182,14 +190,16 @@ text = "Score: "
 [node name="Seperator" type="Control" parent="PopUpMenu/BaseMenuScreenContainer"]
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="PopUpMenu"]
+[node name="BaseMenuOpenButtonContainer" type="VBoxContainer" parent="PopUpMenu"]
 layout_mode = 2
+size_flags_vertical = 8
+theme_override_constants/separation = 10
 
-[node name="Seperator" type="Control" parent="PopUpMenu/VBoxContainer"]
-layout_mode = 2
-
-[node name="ToggleMenuButton" type="Button" parent="PopUpMenu/VBoxContainer"]
+[node name="ToggleMenuButton" type="Button" parent="PopUpMenu/BaseMenuOpenButtonContainer"]
 custom_minimum_size = Vector2(30, 9)
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_styles/normal = SubResource("StyleBoxTexture_jlb72")
+
+[node name="Seperator" type="Control" parent="PopUpMenu/BaseMenuOpenButtonContainer"]
+layout_mode = 2
