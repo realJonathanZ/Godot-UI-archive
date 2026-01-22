@@ -143,6 +143,8 @@ theme_override_styles/hover = SubResource("StyleBoxTexture_qinws")
 
 [node name="StatsDisplayContainer" type="VBoxContainer" parent="PopUpMenu/VBoxContainer/baseMenuScreen/NinePatchRect/MarginContainer"]
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
 
 [node name="CoinDisplay" type="Label" parent="PopUpMenu/VBoxContainer/baseMenuScreen/NinePatchRect/MarginContainer/StatsDisplayContainer"]
 layout_mode = 2
